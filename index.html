@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<title>Área Pokémon - Jogos e Saves</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+
+<style>
+    
+    body{
+        margin: 0;
+        background-image: url("https://wallpapers-clan.com/wp-content/uploads/2023/11/pokemon-togepi-pattern-background-scaled.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;        
+        font-family: "Fira Code";
+    }
+    header{
+         display: flex;
+         justify-content: space-between;
+         background-color: #ff5540;
+         padding-top: 10px;
+         padding-bottom: 10px;
+         padding-right: 0px;
+         padding-left: 20px;
+         border-bottom: 10px solid #000000
+     }
+     a{
+      display: inline-flex;
+      align-items: center;
+      color: #ffffff;
+      font-size: 20px;
+      font-Weight: 500;
+      text-decoration: none;
+      text-shadow: 2px 2px 1px #000000;
+      margin-right: 30px;
+     }
+     a::before{
+         content: "";
+         background-color: #ffffff;
+         width: 10px;
+         height: 10px;
+         margin-right: 10px;
+     }
+     .banner{
+         background-image: url("https://files.tecnoblog.net/wp-content/uploads/2016/08/pokemon-uranium-700x399.png");
+         background-repeat: no-repeat;
+         background-size: 100%;
+         height: 550px;
+         border-bottom: 10px solid #000000;
+         box-sizing: border-box;
+         padding-top: 75px;
+         padding-left: 60px;
+     }
+     .banner .wrapper{
+         display: flex;
+         flex-direction: column;
+         width: 380px;
+     }
+     .banner .navegation{
+         display: flex;
+         justify-content: space-around;
+     }
+     .banner .box{
+         margin-bottom: 40px;
+     }
+     .box{
+         display: inline-block;
+         background-color: #3a4042;
+         box-shadow: 5px 5px 2px #000000;
+         padding: 42px 44px;
+         text-align: center;
+         border-radius: 10px;
+         opacity: 90%;
+     }
+     .button{
+         display: inline-block;
+         background-color: #f25a70;
+         box-shadow: 5px 5px 2px #000000;
+         padding: 18px 20px;
+         margin-right: 0px;
+         transition: transform 100ms linear;
+     }
+     .button:hover{
+         transform: scale(1.08);
+     }
+     .title{
+         color: #ffc72b;
+         -webkit-text-stroke: 1px #000000;
+         text-shadow: 2px 2px 1px #95b7ff;
+         font-size: 40px;
+         margin-bottom: -20px;
+     }
+     .main-title{
+         font-size: 60px;
+         color: #ffffff;
+         text-shadow: none;
+         text-align: center;
+         font-size: 60px;
+         -webkit-text-stroke: 1px #000000;
+         margin-top: 20px;
+         margin-bottom: 60px;
+     }
+     .subtitle{
+         color: #ffc72b;
+         -webkit-text-stroke: 1px #000000;
+         text-shadow: 2px 2px 1px #95b7ff;
+     }
+     .main-subtitle{
+         color: #ffffff;
+         -webkit-text-stroke: 1px #000000;
+         text-shadow: none;
+         text-align: center;
+         font-style: italic;
+     }
+     .main-subtitle.-emphasis{
+         font-size: 30px;
+         text-decoration: underline #ffffff;
+     }
+     .section{
+         background-color: #8098ff;
+         padding-top: 1px;
+         padding-bottom: 100px;
+         border-bottom: 10px solid #000000;
+         border-top: 10px solid #000000;
+         margin: 200px 0px 200px;
+     }
+     .section.-games{
+         background-color: #294C60;
+     }
+     .wrapper-games{
+         display: flex;
+         flex-direction: column;
+         padding-left: 60px;
+         width: 650px;
+         margin-bottom: 50px;
+     }
+      .wrapper-games.-right{
+          position: relative; left: 220px;
+      }
+     .navegation-games{
+         display: flex;
+         justify-content: space-around;
+     }
+     .box.-games{
+         margin-bottom: 20px;
+         border-radius: 40px 100px;
+     }
+     .box.-games-right{
+         margin-bottom: 20px;
+         border-radius: 100px 40px;
+     }
+     .subtitle.-games{
+         color: #ffffff;
+         text-shadow: 2px 2px 1px #000000;
+         em { text-decoration: underline #ffffff; }
+         text-align: center;
+     }    
+     img{
+         width: 40px;
+         height: 40px;         
+     }
+     .img.-Groudon{
+         width: 107px;
+         height: 74px;
+         margin-top: -10px;
+         margin-bottom: -5px;
+         margin-left: 70px;
+     }
+     .img.-Kyogre{
+         width: 234px;
+         height: 55px;
+         margin-left: 670px;
+         margin-bottom: 20px;
+     }
+     .img.-Luxio{
+         width: 100px;
+         height: 100px;
+         margin-top: -10px;
+         margin-bottom: -10px;
+         margin-left: 70px;
+     }
+     .img.-Emboar{
+         width: 120px;
+         height: 120px;
+         margin-top: -50px;
+         margin-bottom: 20px;
+         margin-left: 790px;
+     }
+     .img.-games{
+         width: 240px;
+         height: 240px;
+         border-radius: 10px;
+     }
+     img.-platform{
+         width: 30px;
+         height: 30px;
+         background-color: #788AA3;
+         border-radius: 10px;
+     }
+     .detail{
+         background-color: #55acff;
+         padding-top: 30px;
+         border-bottom: 6px solid #000000;
+         border-top: 6px solid #000000;
+     }
+     .detail.-shortly{
+         background-color: #ff6a7f;
+         text-decoration: underline #ffffff;
+     }
+
+
+</style>
+</head>
+<body>
+    <header>
+        <img class="img -pokebola" src="https://raw.githubusercontent.com/Will-1922/Will-1922.github.io/main/Assets/Images/Pok%C3%A9bola.png" alt="pokébola">
+        <nav>
+             <a href="">Informações</a>
+             <a href=""lang="en">Download Games</a>
+             <a href=""lang="en">Team Pokémon</a>
+        </nav>
+    </header>
+    
+    
+    <section class="banner">   
+        <div class="wrapper">
+           <div class="box">
+               <h1 class="title">Pokémon</h1>
+               <h2 class="subtitle">Gotta catch 'em all!</h2>
+           </div>
+           <div class="navegation">
+               <a class="button" href="https://pokemondb.net/" target="_blank">Pokémon DB</a>
+               <a class="button" href="https://www.serebii.net/" target="_blank"">Serebii</a>
+           </div>
+        </div>
+    </section>
+    <section class="section">
+        <h1 class="main-title">Informações</h1>
+        <div class="detail">
+            <img class="img -Groudon" src="https://raw.githubusercontent.com/Will-1922/Will-1922.github.io/main/Assets/Images/Groudon.gif" alt="groudon">
+            <h2 class="main-subtitle">Já teve vontade de jogar um dos jogos de Pokémon mas infelizmente você não teve a felicidade de ter tido/ganho um console da época para isso? Para aqueles fãs dos jogos de Pokémon dos consoles Game Boy Advanced e Nintendo DS, esse é o local onde você pode baixar as ROM's dos seus queridos jogos sem precisar procurar muito e com bastante facilidade.</h2>
+            <h2 class="main-subtitle -emphasis">Venha se divertir também!</h2>
+            <img class="img -Kyogre" src="https://raw.githubusercontent.com/Will-1922/Will-1922.github.io/main/Assets/Images/Kyogre.gif" alt="kyogre">
+        </div>
+    </section>
+    
+    
+    <section class="section -games">
+        <h1 lang="en" class="main-title">Download Games</h1>
+       <div class="wrapper-games">
+           <div class="box -games">
+               <img class="img -games" src="https://raw.githubusercontent.com/Will-1922/Will-1922.github.io/main/Assets/Images/Fire%20Red.jpg" alt="Fire Red">
+               <img class="img -games" src="https://raw.githubusercontent.com/Will-1922/Will-1922.github.io/main/Assets/Images/Leaf%20Green.jpg" alt="Left Green">
+               <h2 class="subtitle -games">Fire Red / Leaf Green</h2>
+               <h2 class="subtitle -games"><em>Game Freak</em> • jan 29,2004 • <img class="img -platform" src="https://raw.githubusercontent.com/Will-1922/Will-1922.github.io/main/Assets/Images/GBA.png" alt="GBA"> </h2>
+           </div>
+           <div class="navegation-games">
+               <a class="button" href="">Fire Red vers.</a>
+               <a class="button" href="">Leaf Green vers.</a>
+           </div>
+        </div>
+        <div class="wrapper-games -right">
+           <div class="box -games-right">
+               <img class="img -games" src="https://raw.githubusercontent.com/Will-1922/Will-1922.github.io/main/Assets/Images/Ruby.jpg" alt="Ruby">
+               <img class="img -games" src="https://raw.githubusercontent.com/Will-1922/Will-1922.github.io/main/Assets/Images/Sapphire.jpg" alt="Sapphire">
+               <img class="img -games" src="https://raw.githubusercontent.com/Will-1922/Will-1922.github.io/main/Assets/Images/Emerald.jpg" alt="Emerald">
+               <h2 class="subtitle -games">Ruby / Sapphire / Emerald</h2>
+               <h2 class="subtitle -games"><em>Game Freak</em> • nov 21,2002 • <img class="img -platform" src="https://raw.githubusercontent.com/Will-1922/Will-1922.github.io/main/Assets/Images/GBA.png" alt="GBA"></h2>
+               <h2 class="subtitle -games"><em>Game Freak</em> • sep 16,2004 • <img class="img -platform" src="https://raw.githubusercontent.com/Will-1922/Will-1922.github.io/main/Assets/Images/GBA.png" alt="GBA"></h2>
+           </div>
+           <div class="navegation-games">
+               <a class="button" href="">Ruby vers.</a>
+               <a class="button" href="">Sapphire vers.</a>
+               <a class="button" href="">Emerald vers.</a>
+           </div>
+        </div>
+        <div class="wrapper-games">
+           <div class="box -games">
+               <img class="img -games" src="https://raw.githubusercontent.com/Will-1922/Will-1922.github.io/main/Assets/Images/HeartGold.jpg" alt="HeartGold">
+               <img class="img -games" src="https://raw.githubusercontent.com/Will-1922/Will-1922.github.io/main/Assets/Images/SoulSilver.jpg" alt="SoulSilver">
+               <h2 class="subtitle -games">HeartGold / SoulSilver</h2>
+               <h2 class="subtitle -games"> <em>Game Freak</em> • sep 12,2009 • <img class="img -platform" src="https://raw.githubusercontent.com/Will-1922/Will-1922.github.io/main/Assets/Images/Nintendo-DS.png" alt="GBA"></h2>
+           </div>
+           <div class="navegation-games">
+               <a class="button" href="">HeartGold vers.</a>
+               <a class="button" href="">SoulSilver vers.</a>
+           </div>
+        </div>
+        <div class="detail -shortly">
+           <img class="img -Luxio" src="https://raw.githubusercontent.com/Will-1922/Will-1922.github.io/main/Assets/Images/Luxio.gif" alt="Luxio">
+           <h1 class="main-title">MAIS JOGOS EM BREVE!!</h1>
+           <img class="img -Emboar" src="https://raw.githubusercontent.com/Will-1922/Will-1922.github.io/main/Assets/Images/Emboar.gif" alt="Emboar">
+        <div>
+    </section>    
+    
+</body>
+</html>

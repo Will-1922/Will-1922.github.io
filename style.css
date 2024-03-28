@@ -1,0 +1,234 @@
+    body{
+      margin: 0;
+      background-image: url("https://wallpapers-clan.com/wp-content/uploads/2023/11/pokemon-togepi-pattern-background-scaled.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      background-size: cover;
+      font-family: "Fira Code";
+      em{text-decoration: underline #ffffff
+    }
+    header{
+         display: flex;
+         justify-content: space-between;
+         background-color: #ff5540;
+         padding-top: 10px;
+         padding-bottom: 10px;
+         padding-right: 0px;
+         padding-left: 20px;
+         border-bottom: 10px solid #000000
+    }
+    a{
+      display: inline-flex;
+      align-items: center;
+      color: #ffffff;
+      font-size: 20px;
+      font-Weight: 500;
+      text-decoration: none;
+      text-shadow: 2px 2px 1px #000000;
+      margin-right: 30px;
+    }
+    a.decor::before{
+      content: "";
+      background-color: #ffffff;
+      width: 10px;
+      height: 10px;
+      margin-right: 10px;
+    }
+    .banner{
+      background-image: url("https://files.tecnoblog.net/wp-content/uploads/2016/08/pokemon-uranium-700x399.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      height: 550px;
+      border-bottom: 10px solid #000000;
+      box-sizing: border-box;
+      padding-top: 75px;
+      padding-left: 60px;
+    }
+    .banner .wrapper{
+      display: flex;
+      flex-direction: column;
+      width: 390px;
+    }
+    .banner .navegation{
+      display: flex;
+      justify-content: space-around;
+    }
+    .banner .box{
+      margin-bottom: 20px;
+    }
+    .box{
+      display: inline-block;
+      background-color: #3a4042;
+      box-shadow: 5px 5px 2px #000000;
+      padding: 10px 20px;
+      text-align: center;
+      border-radius: 10px 40px;
+      opacity: 90%;
+    }
+    .button{
+      display: inline-block;
+      background-color: #f25a70;
+      box-shadow: 5px 5px 2px #000000;
+      padding: 18px 20px;
+      margin-right: 0px;
+      border-radius: 5px;
+      transition: transform 100ms linear;
+    }
+    .button:hover{
+      transform: scale(1.08);
+    }
+    
+    
+     .title{
+         color: #ffc72b;
+         -webkit-text-stroke: 1px #000000;
+         text-shadow: 2px 2px 1px #95b7ff;
+         font-size: 40px;
+         margin-bottom: -20px;
+     }
+     .main-title{
+         font-size: 60px;
+         color: #ffffff;
+         text-shadow: none;
+         text-align: center;
+         font-size: 60px;
+         -webkit-text-stroke: 1px #000000;
+         margin-top: 20px;
+         margin-bottom: 60px;
+     }
+     .subtitle{
+         color: #ffc72b;
+         -webkit-text-stroke: 1px #000000;
+         text-shadow: 2px 2px 1px #95b7ff;
+     }
+     .main-subtitle{
+         color: #ffffff;
+         font-size: 15px;
+         text-shadow: none;
+         font-style: italic;
+     }
+     
+     
+     .section{
+         background-color: #617ABA;
+         padding-top: 1px;
+         padding-bottom: 100px;
+         border-bottom: 10px solid #000000;
+         border-top: 10px solid #000000;
+         margin: 180px 0px -1px;
+         text-align: center;
+     }
+     .section.-games{
+         background-color: #294C60;
+     }
+     .wrapper-games{
+         display: flex;
+         flex-direction: column;
+         padding-left: 60px;
+         width: 650px;
+         margin-bottom: 50px;
+     }
+     .wrapper-games.-right{
+          position: relative; left: 220px;
+     }
+     .box.-games{
+         margin-bottom: 20px;
+         border-radius: 40px 100px;
+     }
+     .box.-games-right{
+         margin-bottom: 20px;
+         border-radius: 100px 40px;
+     }
+     .subtitle.-games{
+         color: #ffffff;
+         text-shadow: 2px 2px 1px #000000;
+         text-align: center;
+     }    
+     img{
+         width: 40px;
+         height: 40px;         
+     }
+     .img.-mini{
+       width: 10px;
+       height: 10px;
+     }
+     .img.-Groudon{
+         width: 110px;
+         height: 100px;
+         margin-top: -10px;
+         margin-bottom: -20px;
+         margin-left: -800px;
+     }
+     .img.-Kyogre{
+         width: 234px;
+         height: 60px;
+         margin-top: -10px;
+         margin-bottom: 10px;
+         margin-left: 670px;
+     }
+     .img.-Luxio{
+         width: 100px;
+         height: 100px;
+         margin-top: -20px;
+         margin-bottom: -10px;
+         margin-left: -800px;
+     }
+     .img.-Emboar{
+         width: 120px;
+         height: 120px;
+         margin-top: -50px;
+         margin-bottom: 20px;
+         margin-left: 790px;
+     }
+     .img.-Rotom{
+         width: 240px;
+         height: 140px;
+         margin-bottom: -70px;
+         margin-top: -30px;
+     }
+     .img.-games{
+         width: 240px;
+         height: 240px;
+         border-radius: 10px;
+     }
+     img.-platform{
+         width: 30px;
+         height: 30px;
+         background-color: #788AA3;
+         border-radius: 10px;
+     }
+     .detail{
+         background-color: #61B3BA;
+         padding-top: 30px;
+         margin-bottom: 50px;
+         border: 6px solid #ffffff;
+         border-radius: 20px;
+     }
+     .detail.-two{
+         background-color: #6096BA;
+     }
+     .modal_content{
+         width: 700px;
+         background-color: #000000ab;
+         padding: 50px 0px;
+         border-radius: 20px;
+         transition: 3s;
+     }
+     .cursor{
+         cursor: pointer;
+     }
+     .btn{
+         position: relative; top: -30px; left: 300px;
+     }
+     .main-footer{
+         display: flex;
+         justify-content: center;
+         background-color: #666A86;
+         padding-top: 20px;
+         padding-bottom: 20px;
+     }
+     .main-footer .item-footer{
+         margin-right: 20px;
+         margin-left: 20px;
+     }

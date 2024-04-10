@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<title>Área Pokémon</title>
+<link rel="website icon" type="png" href="Assets/Images/Icons/Website Icon.png.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img class="logo-header"src="Assets/Images/Icons/Pokébola.png" alt="pokébola">
+        <nav>
+            <a class="decor" href="#infor">Informações</a>
+            <a class="decor" href="#games"lang="en">Download Games</a>
+        </nav>
+    </header>
+  <!--local de direcionamento para sites de ajuda-->
+    <section class="banner">
+      <div class="wrapper">
+        <div class="box">
+            <h1 class="title">Pokémon</h1>
+            <br>
+            <h2 class="subtitle">Gotta catch 'em all!</h2>
+            <br>
+            <h6 class="main-subtitle"><img class="miniball" src="Assets/Images/Icons/Pokébola.png" alt="pokébola"> clique abaixo para acessar a Pokédex e informações sobre o mundo Pokémon <img class="miniball" src="Assets/Images/Icons/Pokébola.png" alt="pokébola"></h6>
+        </div>
+        <div class="navegation">
+            <a class="button" href="https://pokemondb.net/" target="_blank">Pokémon DB</a>
+            <a class="button" href="https://www.serebii.net/" target="_blank">Serebii</a>
+        </div>
+      </div>
+    </section>
+    <!--local com imagens dos personagens jogáveis-->
+    <section class="section -characters">
+      <h1 lang="en" class="main-title">Male Characters</h1>
+      <div class="container">
+        <div class="slide box-1" style="--img: url(Assets/Images/Characters/Red.jpg)"; data-text="Red">
+        </div>
+        <div class="slide box-2" style="--img: url(Assets/Images/Characters/Brendan.jpg)"; data-text="Brendan">
+        </div>
+        <div class="slide box-3" style="--img: url(Assets/Images/Characters/Ethan.jpg)"; data-text="Ethan">
+        </div>
+        <div class="slide box-4" style="--img: url(Assets/Images/Characters/Lucas.jpg)"; data-text="Lucas">
+        </div>
+        <div class="slide box-5" style="--img: url(Assets/Images/Characters/Hilbert.jpg)"; data-text="Hilbert">
+        </div>
+      </div>
+      <h2 class="main-subtitle detail -two"> Imagens dos personagens masculinos jogáveis em um dos respectivos jogos no site.</h2>
+    </section>
+    <!--local de informações e dicas sobre o site-->
+    <section class="section"><a name="infor"></a>
+        <h1 class="main-title">Informações</h1>
+      <div class="detail">
+        <img class="img -Groudon" src="Assets/Images/Pokémons/Groudon.gif" alt="Groudon">
+        <h2 class="main-subtitle"> Já teve vontade de jogar um dos jogos de Pokémon mas infelizmente você não teve a felicidade de ter tido/ganho um console da época para isso?</h2>
+        <br>
+        <h2 class="main-subtitle"> Para aqueles fãs dos jogos de Pokémon dos consoles Game Boy Advanced e Nintendo DS, esse é o local onde você pode baixar as ROM's sem precisar procurar muito e com bastante facilidade.</h2>
+        <img class="img -Kyogre" src="Assets/Images/Pokémons/Kyogre.gif" alt="Kyogre">
+      </div>
+      <div class="detail -two">
+        <img class="img -Rotom" src="Assets/Images/Pokémons/Rotom.gif" alt="Rotom">
+        <h6 class="main-title"><em>Dicas do Rotom:</em></h6>
+        <h5 class="main-subtitle"> •Na área de Download clique na imagem do jogo de sua preferência para escolher entre as versões em português e inglês para ser direcionado ao Drive e iniciar o Download.</h5>
+        <br>
+        <h5 class="main-subtitle"> •Atenção! As versões em português não estão 100% traduzidas porque elas infelizmente foram descontinuadas, entretanto, isso não afetará na sua jogabilidade e experiência com o jogo.</h5>
+      </div>
+      <div class="detail">
+        <img class="img -Rayquaza" src="Assets/Images/Pokémons/Rayquaza.gif" alt="Rayquaza">
+        <h6 class="main-title"><em>Sobre o Site:</em></h6>
+        <h2 class="main-subtitle"> Criado originalmente em 2024 para uso pessoal e depois disponibilizado para um grupo seleto de pessoas que tinham interesse no projeto. É um local aonde hospeda de maneira bonita e organizada jogos que me divertiram por muito tempo.</h2>
+        <img class="img -Deoxys" src="Assets/Images/Pokémons/Deoxys.gif" alt="Deoxys">
+      </div>
+    </section>
+    <!--local com imagens das personagens jogáveis-->
+    <section class="section -characters">
+      <h1 lang="en" class="main-title">Female Characters</h1>
+      <div class="container">
+        <div class="slide box-1" style="--img: url(Assets/Images/Characters/Leaf.jpg)"; data-text="Leaf">
+        </div>
+        <div class="slide box-2" style="--img: url(Assets/Images/Characters/May.jpg)"; data-text="May">
+        </div>
+        <div class="slide box-3" style="--img: url(Assets/Images/Characters/Lyra.jpg)"; data-text="Lyra">
+        </div>
+        <div class="slide box-4" style="--img: url(Assets/Images/Characters/Dawn.jpg)"; data-text="Dawn">
+        </div>
+        <div class="slide box-5" style="--img: url(Assets/Images/Characters/Hilda.jpg)"; data-text="Hilda">
+        </div>
+      </div>
+      <h2 class="main-subtitle detail -two"> Imagens das personagens femininas jogáveis em um dos respectivos jogos no site.</h2>
+    </section>
+    <!--local de Download e pequenas informações sobre os jogos-->
+    <section class="section"><a name="games"></a>
+      <h1 lang="en" class="main-title">Download Games</h1>
+      <div class="wrapper-games">
+        <div class="box -games">
+          <button class="cursor" onclick="document.getElementById('modal1').showModal()"><img class="img -games" src="Assets/Images/Games Images/Fire Red.jpg" alt="Fire Red"></button>
+      <dialog id="modal1" class="modal_content">
+        <div class="top-content">
+          <div class="left-text">
+               Área de Download:
+          </div>
+            <button class="btn cursor" onclick="document.getElementById('modal1').close()">&times</button>
+        </div>
+          <br>
+          <a class="button" href="https://drive.google.com/file/d/1S8oyxDiQo6ox-rJMbGxGneKCrZnRNCDL/view?usp=drivesdk">Fire Red (pt-BR) vers.</a>
+          <br>
+          <br>
+          <a class="button" href="https://drive.google.com/file/d/1SA5MucNTNTtRB8GuOt8n9Q1nkADmxS0j/view?usp=drivesdk">Fire Red (USA) vers.</a>
+      </dialog>
+          <button class="cursor" onclick="document.getElementById('modal2').showModal()"><img class="img -games" src="Assets/Images/Games Images/Leaf Green.jpg" alt="Leaf Green"></button>
+      <dialog id="modal2" class="modal_content">
+        <div class="top-content">
+          <div class="left-text">
+               Área de Download:
+          </div>
+            <button class="btn cursor" onclick="document.getElementById('modal2').close()">&times</button>
+        </div>
+          <br>
+          <a class="button" href="https://drive.google.com/file/d/1SMryiY7KN03E_D8erajRF6kUMU63mqgA/view?usp=drivesdk">Leaf Green (pt-BR) vers.</a>
+          <br>
+          <br>
+          <a class="button" href="https://drive.google.com/file/d/1SS--XaVSs2HwMR9C74HC72ObFBzrh50R/view?usp=drivesdk">Leaf Green (USA) vers.</a>
+      </dialog>
+          <h2 class="subtitle -games">Fire Red / Leaf Green</h2>
+          <h2 class="subtitle -games"><em>Game Freak</em> • jan 29,2004 • <img class="img -platform" src="Assets/Images/Icons/GBA.png" alt="GBA"> </h2>
+        </div>
+      </div>
+      <div class="wrapper-games-right">
+        <div class="box -games-right">
+          <button class="cursor" onclick="document.getElementById('modal3').showModal()"><img class="img -games" src="Assets/Images/Games Images/Ruby.jpg" alt="Ruby"></button>
+      <dialog id="modal3" class="modal_content">
+        <div class="top-content">
+          <div class="left-text">
+            Área de Download:
+          </div>
+            <button class="btn cursor" onclick="document.getElementById('modal3').close()">&times</button>
+        </div>
+          <br>
+          <a class="button" href="https://drive.google.com/file/d/1SneucftxHOdYMlpAKT317oRYoqrWyeYO/view?usp=drivesdk">Ruby (pt-BR) vers.</a>
+          <br>
+          <br>
+          <a class="button" href="https://drive.google.com/file/d/1T7A7bR39qSFliRNlZIHZ5K9NPziMr2uf/view?usp=drivesdk">Ruby (USA) vers.</a>
+      </dialog>
+          <button class="cursor" onclick="document.getElementById('modal4').showModal()"><img class="img -games" src="Assets/Images/Games Images/Sapphire.jpg" alt="Sapphire"></button>
+      <dialog id="modal4" class="modal_content">
+        <div class="top-content">
+          <div class="left-text">
+            Área de Download:
+          </div>
+            <button class="btn cursor" onclick="document.getElementById('modal4').close()">&times</button>
+        </div>
+          <br>
+          <a class="button" href="https://drive.google.com/file/d/1TBVy0MWip99r3Qdf7cpTJRBwdH5p4aE2/view?usp=drivesdk">Sapphire (pt-BR) vers.</a>
+          <br>
+          <br>
+          <a class="button" href="https://drive.google.com/file/d/1TBcsAHyqXqlO3YSl-nCbN3pNRiqwbsG6/view?usp=drivesdk">Sapphire (USA) vers.</a>
+      </dialog>
+          <button class="cursor" onclick="document.getElementById('modal5').showModal()"><img class="img -games" src="Assets/Images/Games Images/Emerald.jpg" alt="Emerald"></button>
+      <dialog id="modal5" class="modal_content">
+        <div class="top-content">
+          <div class="left-text">
+               Área de Download:
+          </div>
+            <button class="btn cursor" onclick="document.getElementById('modal5').close()">&times</button>
+        </div>
+          <br>
+          <a class="button" href="https://drive.google.com/file/d/1RygqfIvU3H8n9rS3QB4WmgzPaxKnwfSx/view?usp=drivesdk">Emerald (pt-BR) vers.</a>
+          <br>
+          <br>
+          <a class="button" href="https://drive.google.com/file/d/1S1WIKtBsz0L_VSzexn_rkSeC9EYrJ-Fn/view?usp=drivesdk">Emerald (USA) vers.</a>
+      </dialog>
+          <h2 class="subtitle -games">Ruby / Sapphire / Emerald</h2>
+          <h2 class="subtitle -games"><em>Game Freak</em> • nov 21,2002 • <img class="img -platform" src="Assets/Images/Icons/GBA.png" alt="GBA"></h2>
+          <h2 class="subtitle -games"><em>Game Freak</em> • sep 16,2004 • <img class="img -platform" src="Assets/Images/Icons/GBA.png" alt="GBA"></h2>
+        </div>
+      </div>
+      <div class="wrapper-games">
+        <div class="box -games">
+          <button class="cursor" onclick="document.getElementById('modal6').showModal()"><img class="img -games" src="Assets/Images/Games Images/HeartGold.jpg" alt="HeartGold"></button>
+      <dialog id="modal6" class="modal_content">
+        <div class="top-content">
+          <div class="left-text">
+               Área de Download:
+          </div>
+            <button class="btn cursor" onclick="document.getElementById('modal6').close()">&times</button>
+        </div>
+          <br>
+          <a class="button" href="https://drive.google.com/file/d/1SBztUTUdZL_dmKwB2IkZssl1aXHBllCe/view?usp=drivesdk">HeartGold (pt-BR) vers.</a>
+          <br>
+          <br>
+          <a class="button" href="https://drive.google.com/file/d/1SKB-Twjf7d7MVIhPBnEXIUhruuxq4bSA/view?usp=drivesdk">HeartGold (USA) vers.</a>
+      </dialog>
+          <button class="cursor" onclick="document.getElementById('modal7').showModal()"><img class="img -games" src="Assets/Images/Games Images/SoulSilver.jpg" alt="SoulSilver"></button>
+      <dialog id="modal7" class="modal_content">
+        <div class="top-content">
+          <div class="left-text">
+               Área de Download:
+          </div>
+            <button class="btn cursor" onclick="document.getElementById('modal7').close()">&times</button>
+        </div>
+          <br>
+          <a class="button" href="https://drive.google.com/file/d/1TJbXR5E7NQdx2TCgG9tzx7nXO3vFERDF/view?usp=drivesdk">SoulSilver (pt-BR) vers.</a>
+          <br>
+          <br>
+          <a class="button" href="https://drive.google.com/file/d/1TNr4mUAQknGmdRA11yq14mXflQkRLFo6/view?usp=drivesdk">SoulSilver (USA) vers.</a>
+      </dialog>
+          <h2 class="subtitle -games">HeartGold / SoulSilver</h2>
+          <h2 class="subtitle -games"> <em>Game Freak</em> • sep 12,2009 • <img class="img -platform" src="Assets/Images/Icons/Nintendo DS.png" alt="Nintendo DS"></h2>
+        </div>
+      </div>
+      <div class="wrapper-games-right">
+        <div class="box -games-right">
+          <button class="cursor" onclick="document.getElementById('modal8').showModal()"><img class="img -games" src="Assets/Images/Games Images/Diamond.jpg" alt="Diamond"></button>
+      <dialog id="modal8" class="modal_content">
+        <div class="top-content">
+          <div class="left-text">
+            Área de Download:
+          </div>
+            <button class="btn cursor" onclick="document.getElementById('modal8').close()">&times</button>
+        </div>
+          <br>
+          <a class="button" href="https://drive.google.com/file/d/1RpNLnfJb8A5rgBH8_P5dCCfYOMVs34PJ/view?usp=drivesdk">Diamond (pt-BR) vers.</a>
+          <br>
+          <br>
+          <a class="button" href="https://drive.google.com/file/d/1Rt7VXShiz4ey8UmjF4SLXIYK5Q0iB9d5/view?usp=drivesdk">Diamond (USA) vers.</a>
+      </dialog>
+          <button class="cursor" onclick="document.getElementById('modal9').showModal()"><img class="img -games" src="Assets/Images/Games Images/Pearl.jpg" alt="Pearl"></button>
+      <dialog id="modal9" class="modal_content">
+        <div class="top-content">
+          <div class="left-text">
+            Área de Download:
+          </div>
+            <button class="btn cursor" onclick="document.getElementById('modal9').close()">&times</button>
+        </div>
+          <br>
+          <a class="button" href="https://drive.google.com/file/d/1SUelK-w35j2VfjPCLGe33pDxE1yQc6Rd/view?usp=drivesdk">Pearl (pt-BR) vers.</a>
+          <br>
+          <br>
+          <a class="button" href="https://drive.google.com/file/d/1SXYNhSRyZzJOAiW4bK2MGeC1SS1EvskG/view?usp=drivesdk">Pearl (USA) vers.</a>
+      </dialog>
+          <button class="cursor" onclick="document.getElementById('modal10').showModal()"><img class="img -games" src="Assets/Images/Games Images/Platinum.jpg" alt="Platinum"></button>
+      <dialog id="modal10" class="modal_content">
+        <div class="top-content">
+          <div class="left-text">
+               Área de Download:
+          </div>
+            <button class="btn cursor" onclick="document.getElementById('modal10').close()">&times</button>
+        </div>
+          <br>
+          <a class="button" href="https://drive.google.com/file/d/1SY8QahNxMqbRexip6fYQst8hp7VYQBts/view?usp=drivesdk">Platinum (pt-BR) vers.</a>
+          <br>
+          <br>
+          <a class="button" href="https://drive.google.com/file/d/1SmiEm7L9mus95AvEXC1okNjXebWm9RUX/view?usp=drivesdk">Platinum (USA) vers.</a>
+      </dialog>
+          <h2 class="subtitle -games">Diamond / Pearl / Platinum</h2>
+          <h2 class="subtitle -games"><em>Game Freak</em> • sep 28,2006 • <img class="img -platform" src="Assets/Images/Icons/Nintendo DS.png" alt="Nintendo DS"></h2>
+          <h2 class="subtitle -games"><em>Game Freak</em> • sep 13,2008 • <img class="img -platform" src="Assets/Images/Icons/Nintendo DS.png" alt="Nintendo DS"></h2>
+        </div>
+      </div>
+      <div class="wrapper-games-end">
+        <div class="box -games">
+          <button class="cursor" onclick="document.getElementById('modal11').showModal()"><img class="img -games" src="Assets/Images/Games Images/Black.jpg" alt="Black"></button>
+      <dialog id="modal11" class="modal_content">
+        <div class="top-content">
+          <div class="left-text">
+               Área de Download:
+          </div>
+            <button class="btn cursor" onclick="document.getElementById('modal11').close()">&times</button>
+        </div>
+          <br>
+          <a class="button" href="https://drive.google.com/file/d/1TaaMk-TdB_a_sA5HY8wfUQRP4hDh_nl-/view?usp=drivesdk">Black (pt-BR) vers.</a>
+          <br>
+          <br>
+          <a class="button" href="https://drive.google.com/file/d/1RoT1D1sfDesZvktgz1S1GCS8BAI4tDJZ/view?usp=drivesdk">Black (USA) vers.</a>
+      </dialog>
+          <button class="cursor" onclick="document.getElementById('modal12').showModal()"><img class="img -games" src="Assets/Images/Games Images/White.jpg" alt="White"></button>
+      <dialog id="modal12" class="modal_content">
+        <div class="top-content">
+          <div class="left-text">
+               Área de Download:
+          </div>
+            <button class="btn cursor" onclick="document.getElementById('modal12').close()">&times</button>
+        </div>
+          <br>
+          <a class="button" href="https://drive.google.com/file/d/1TSzniP4CW7nWKVL9TO-G-7sR0G4As9um/view?usp=drivesdk">White (pt-BR) vers.</a>
+          <br>
+          <br>
+          <a class="button" href="https://drive.google.com/file/d/1TYRxcT59F1gMqgj6qvoxDGlLrhWguagr/view?usp=drivesdk">White (USA) vers.</a>
+      </dialog>
+          <h2 class="subtitle -games">Black / White</h2>
+          <h2 class="subtitle -games"> <em>Game Freak</em> • sep 18,2010 • <img class="img -platform" src="Assets/Images/Icons/Nintendo DS.png" alt="Nintendo DS"></h2>
+        </div>
+      </div>
+    </section>
+    <!--local com imagens dos professores Pokémon-->
+    <section class="section -characters">
+      <h1 lang="en" class="main-title">Pokémon Teachers</h1>
+      <div class="container">
+        <div class="slide box-1" style="--img: url(Assets/Images/Characters/Oak.jpg)"; data-text="Oak">
+        </div>
+        <div class="slide box-2" style="--img: url(Assets/Images/Characters/Elm.jpg)"; data-text="Elm">
+        </div>
+        <div class="slide box-3" style="--img: url(Assets/Images/Characters/Birch.jpg)"; data-text="Birch">
+        </div>
+        <div class="slide box-4" style="--img: url(Assets/Images/Characters/Rowan.jpg)"; data-text="Rowan">
+        </div>
+        <div class="slide box-5" style="--img: url(Assets/Images/Characters/Juniper.jpg)"; data-text="Juniper">
+        </div>
+      </div>
+      <h2 class="main-subtitle detail -two"> Imagens dos professores Pokémon que entregam o inicial em um dos respectivos jogos no site.</h2>
+    </section>
+    <!--local de contato pelas redes sociais-->
+    <footer>
+      <section class="footer-top">
+        <a class="item-footer" href="https://www.instagram.com/will12051?igsh=dmUwNGQ2Mm51ZG1k" target="_blank"><img src="Assets/Images/Icons/Icon Instagram.png" alt="icon Instagram pixel"></a>
+        <a class="item-footer" href="https://github.com/Will-1922" target="_blank"><img src="Assets/Images/Icons/Icon Github.png" alt="Icon Github pixel"></a>
+        <p class="text-footer">© 2024 Will_Development.</p>
+      </section>
+    </footer>
+</body>
+</html>
+

@@ -329,7 +329,7 @@ dialog::backdrop{
   gap: 1em;
   width: 900px;
   height: 700px;
-  margin: 5em 0em;
+  margin: 5rem auto;
   transition: all 400ms;
 }
 .container:hover .slide{
@@ -376,7 +376,7 @@ dialog::backdrop{
   position: absolute;
   bottom: 20px;
   color: #ffffff;
-  padding: 10px 10px;
+  padding: 10px 10px 10px 14px;
   letter-spacing: 4px;
   text-transform: uppercase;
   transform: translateY(60px);
@@ -387,4 +387,4 @@ dialog::backdrop{
   transform: translateY(0);
   transition-delay: 400ms;
   opacity: 1;
-}
+  }
